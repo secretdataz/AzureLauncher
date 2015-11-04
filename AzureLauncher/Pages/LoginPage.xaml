@@ -1,0 +1,28 @@
+﻿<Page x:Class="AzureLauncher.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AzureLauncher.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="250" d:DesignWidth="450"
+      Title="LoginPage">
+
+    <Grid>
+        <ComboBox x:Name="IdBox" SelectionChanged="IdBox_SelectionChanged" ItemsSource="{Binding CmbContent}" HorizontalAlignment="Left" Height="26" Margin="131,26,0,0" VerticalAlignment="Top" Width="268" ToolTip="ID" IsEditable="True"/>
+        <Label x:Name="label" Content="ID" HorizontalAlignment="Left" Margin="60,26,0,0" VerticalAlignment="Top" Width="24"/>
+        <PasswordBox x:Name="PwdBox" HorizontalAlignment="Left" Height="26" Margin="131,76,0,0" PasswordChar="•" VerticalAlignment="Top" Width="268"  ToolTip="Password"/>
+        <Label x:Name="label_Copy" Content="Password" HorizontalAlignment="Left" Margin="19,76,0,0" VerticalAlignment="Top" Width="65"/>
+        <Button x:Name="LoginBtn" Content="Log in" HorizontalAlignment="Left" Height="34" Margin="131,141,0,0" Click="LoginBtn_Click" VerticalAlignment="Top" Width="90"/>
+        <Button x:Name="ReplayBtn" Content="Replay" HorizontalAlignment="Left" Height="34" Margin="309,141,0,0" Click="ReplayBtn_Click" VerticalAlignment="Top" Width="90"/>
+        <StackPanel HorizontalAlignment="Left" Height="55" Margin="45,120,0,0" VerticalAlignment="Top" Width="61">
+            <RadioButton x:Name="rag" Content="1rag1"/>
+            <RadioButton x:Name="sak" Content="1sak1"/>
+            <RadioButton x:Name="none" Content="none" IsChecked="True" Height="26"/>
+        </StackPanel>
+        <CheckBox x:Name="RememberIdBox" Content="Remember ID" Checked="RememberId_Checked" Unchecked="RememberId_Unchecked" HorizontalAlignment="Left" Margin="131,115,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="RememberPwdBox" Content="Remember Password" HorizontalAlignment="Left" Margin="267,115,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Azure Launcher by @secretdataz" HorizontalAlignment="Left" Margin="257,190,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
