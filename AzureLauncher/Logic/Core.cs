@@ -78,10 +78,10 @@ namespace AzureLauncher.Logic
             {
                 using (Process exe = Process.Start(PrcStartInfo))
                 {
-                    var loginPage = PageManager.GetPage(typeof(LoginPage)) as LoginPage;
+                    /*var loginPage = PageManager.GetPage(typeof(LoginPage)) as LoginPage;
                     loginPage.ToggleLoginBtn();
                     exe.WaitForExit();
-                    loginPage.ToggleLoginBtn();                    
+                    loginPage.ToggleLoginBtn();*/                    
                 }
             }
             catch
