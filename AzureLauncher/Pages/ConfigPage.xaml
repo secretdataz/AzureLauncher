@@ -13,6 +13,8 @@
         <TextBox x:Name="PathBox" HorizontalAlignment="Left" Height="23" Margin="120,50,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="240"/>
         <Button x:Name="BrowseBtn" Click="BrowseBtn_Click" Content="..." HorizontalAlignment="Left" Margin="375,50,0,0" VerticalAlignment="Top" Width="47" Height="24"/>
         <Label x:Name="label1" Content="Azure Launcher by @secretdataz" HorizontalAlignment="Left" Margin="257,190,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ClearBtn" Click="ClearBtn_Click" Content="Clear saved accounts" HorizontalAlignment="Left" Margin="33,93,0,0" VerticalAlignment="Top" Width="183" Height="29"/>
+        <Label x:Name="StatusLabel" Content="" HorizontalAlignment="Left" Margin="33,190,0,0" VerticalAlignment="Top" Width="219"/>
 
     </Grid>
 </Page>

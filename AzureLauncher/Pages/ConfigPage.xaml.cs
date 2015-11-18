@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace AzureLauncher.Pages
 {
@@ -43,7 +44,14 @@ namespace AzureLauncher.Pages
                 Core.GamePath = file;
                 Properties.Settings.Default.GamePath = file;
                 Properties.Settings.Default.Save();
+                StatusLabel.Content = "Changed Ragnarok EXE path";
             }
+        }
+
+        private void ClearBtn_Click(object sender, RoutedEventArgs e)
+        {
+            File.Delete("azure_accounts.json");
+            StatusLabel.Content = "Deleted account storage";
         }
     }
 }
